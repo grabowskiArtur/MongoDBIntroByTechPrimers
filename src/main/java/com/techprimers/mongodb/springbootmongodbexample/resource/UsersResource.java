@@ -24,4 +24,8 @@ public class UsersResource {
         return userRepository.findAll();
 
     }
+    @GetMapping("/first")
+    public Users getFirst(){
+      return userRepository.findAll().get(0);
+    };
 }
